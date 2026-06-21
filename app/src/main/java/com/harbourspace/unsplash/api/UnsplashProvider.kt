@@ -44,4 +44,8 @@ class UnsplashProvider {
   fun search(query: String): Flow<List<UnsplashItem>> = flow {
     emit(retrofit.search(query = query).results ?: emptyList())
   }.flowOn(Dispatchers.IO)
+
+  fun fetchImageById(id: String): Flow<UnsplashItem> = flow {
+    emit(retrofit.fetchImageById(id))
+  }.flowOn(Dispatchers.IO)
 }
