@@ -1,0 +1,20 @@
+<resources>
+  <string name="app_name">Unsplash</string>
+  <string name="greeting">Hello %1$s!</string>
+
+  <string name="tab_images">Images</string>
+  <string name="tab_collections">Collections</string>
+
+  <string name="image_camera">Camera</string>
+  <string name="image_aperture">Aperture</string>
+  <string name="image_focal_length">Focal Length</string>
+  <string name="image_shutter_speed">Shutter Speed</string>
+  <string name="image_iso">ISO</string>
+  <string name="image_dimensions">Dimensions</string>
+  <string name="image_views">Views</string>
+  <string name="image_downloads">Downloads</string>
+  <string name="image_likes">Likes</string>
+  
+  <string name="description_sagrada">Image of Sagrada Familia</string>
+  <string name="description_back">Return to previous screen</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Unsplash</string>
+  <string name="greeting">สวัสดี %1$s!</string>
+
+  <string name="image_camera">กล้อง</string>
+  <string name="image_aperture">รูรับแสง</string>
+  <string name="image_focal_length">ทางยาวโฟกัส</string>
+  <string name="image_shutter_speed">ความเร็วชัตเตอร์</string>
+  <string name="image_iso">ISO</string>
+  <string name="image_dimensions">ขนาดภาพ</string>
+  <string name="image_views">ยอดดู</string>
+  <string name="image_downloads">ยอดดาวน์โหลด</string>
+  <string name="image_likes">ยอดถูกใจ</string>
+
+  <string name="description_sagrada">รูปภาพ Sagrada Familia</string>
+</resources>
