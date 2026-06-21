@@ -15,7 +15,5 @@
   <string name="image_downloads">Downloads</string>
   <string name="image_likes">Likes</string>
   
-  <string name="description_sagrada">Image of Sagrada Familia</string>
   <string name="description_back">Return to previous screen</string>
-  <string name="description_sagrada_location">Barcelona, Spain</string>
 </resources>

@@ -82,7 +82,7 @@ class DetailsActivity: ComponentActivity() {
 
       val image = detailedImageState.value ?: initialImage
 
-      UnsplashTheme() {
+      UnsplashTheme {
         Scaffold(
           topBar = {
             TopAppBar(
@@ -99,7 +99,7 @@ class DetailsActivity: ComponentActivity() {
               }
             )
           }
-        ) { innerPadding->
+        ) { innerPadding ->
           Column(
             modifier = Modifier.padding(innerPadding)
           ) {
@@ -115,13 +115,11 @@ class DetailsActivity: ComponentActivity() {
                 modifier = Modifier
                   .fillMaxWidth()
                   .height(200.dp)
-                  .clickable(
-                    onClick = {
-                      val intent = Intent(this@DetailsActivity, ImageActivity::class.java)
-                      intent.putExtra(EXTRA_IMAGE, image)
-                      startActivity(intent)
-                    }
-                  ),
+                  .clickable {
+                    val intent = Intent(this@DetailsActivity, ImageActivity::class.java)
+                    intent.putExtra(EXTRA_IMAGE, image)
+                    startActivity(intent)
+                  },
                 contentScale = ContentScale.FillWidth,
                 contentDescription = image?.description ?: ""
               )

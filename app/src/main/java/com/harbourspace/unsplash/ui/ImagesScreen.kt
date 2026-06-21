@@ -41,7 +41,6 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import coil3.compose.rememberAsyncImagePainter
 import coil3.request.ImageRequest
-import com.harbourspace.unsplash.R
 import com.harbourspace.unsplash.data.UnsplashItem
 
 @Composable

@@ -16,7 +16,5 @@
   <string name="image_downloads">ยอดดาวน์โหลด</string>
   <string name="image_likes">ยอดถูกใจ</string>
 
-  <string name="description_sagrada">รูปภาพ Sagrada Familia</string>
   <string name="description_back">กลับไปยังหน้าก่อนหน้า</string>
-  <string name="description_sagrada_location">บาร์เซโลนา, สเปน</string>
 </resources>

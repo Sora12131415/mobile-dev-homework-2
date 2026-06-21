@@ -12,7 +12,6 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.res.stringResource
 import androidx.core.content.IntentCompat
 import coil3.compose.rememberAsyncImagePainter
 import coil3.request.ImageRequest
@@ -46,7 +45,7 @@ class ImageActivity: ComponentActivity() {
               painter = painter,
               modifier = Modifier.fillMaxSize(),
               contentScale = ContentScale.FillHeight,
-              contentDescription = stringResource(R.string.description_sagrada)
+              contentDescription = image?.description ?: ""
             )
           }
         }
