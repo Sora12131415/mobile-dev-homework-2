@@ -52,7 +52,9 @@ import androidx.core.content.IntentCompat
 import coil3.compose.rememberAsyncImagePainter
 import coil3.request.ImageRequest
 import com.harbourspace.unsplash.api.UnsplashProvider
+import com.harbourspace.unsplash.data.UnsplashDatabase
 import com.harbourspace.unsplash.data.UnsplashItem
+import com.harbourspace.unsplash.data.UnsplashRepository
 import com.harbourspace.unsplash.ui.theme.UnsplashTheme
 import com.harbourspace.unsplash.utils.EXTRA_IMAGE
 
@@ -69,12 +71,15 @@ class DetailsActivity: ComponentActivity() {
 
     val initialImage = IntentCompat.getParcelableExtra(intent, EXTRA_IMAGE, UnsplashItem::class.java)
 
+    val db = UnsplashDatabase.getDatabase(this)
+    val repository = UnsplashRepository(UnsplashProvider(), db.unsplashDao())
+
     setContent {
       val detailedImageState = remember { mutableStateOf<UnsplashItem?>(null) }
 
       LaunchedEffect(initialImage?.id) {
         initialImage?.id?.let { id ->
-          UnsplashProvider().fetchImageById(id).collect {
+          repository.fetchImageById(id).collect {
             detailedImageState.value = it
           }
         }
